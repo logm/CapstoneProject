@@ -13,3 +13,13 @@ This project will help you find a recipe with ingredients you already have.
 
 
 I am planning to do this project in Flask, found [this tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+
+
+
+Timeline:
+* 2/10 Finish Flask Tutorial(simple website and db setup) and find/combine recipes into one table
+* 2/24 Basics website design with static content
+* 3/16 DB/Dynamic content
+* 4/6 Search
+* 4/27 "Shopping cart" with recipe/ingredient list
+* 5/8 Fixes and testing
