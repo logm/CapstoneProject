@@ -1,12 +1,13 @@
 version: '2'
 services:
     web:
-        build: flask/
+        build: app/
         ports:
             - "5000:5000"
         volumes:
-            - .:/code
+            - .:/app
         depends_on:
             - redis
+        command: flask run
     redis:
         image: redis
