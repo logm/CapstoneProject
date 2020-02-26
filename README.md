@@ -23,3 +23,8 @@ Timeline:
 * 4/6 Search
 * 4/27 "Shopping cart" with recipe/ingredient list
 * 5/8 Fixes and testing
+
+<!-- Halfway Presentation
+https://docs.google.com/presentation/d/1lalQ-8ZaXOop_yhecGfaWOaFA7PQWY40FiwMpUTV7pU/edit?usp=sharing -->
+
+[Halfway Presentation ](https://docs.google.com/presentation/d/1lalQ-8ZaXOop_yhecGfaWOaFA7PQWY40FiwMpUTV7pU/edit?usp=sharing )

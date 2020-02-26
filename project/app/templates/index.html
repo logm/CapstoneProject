@@ -1,8 +1,76 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Hi, {{ user.username }}!</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
-    {% endfor %}
+<!-- <h1>Hi, {{ user.username }}!</h1>
+{% for post in posts %}
+<div>
+	<p>{{ post.author.username }} says: <b>{{ post.body }}</b></p>
+</div>
+{% endfor %} -->
+
+<div class="col-11">
+	<center>
+		<h1 class="display-4">Recipe Finder</h1>
+
+	</center>
+
+
+	<div class="row">
+		<span class="col-1"></span>
+
+		<div class="input-group mb-3 col-6">
+			<!-- <div class="input-group-prepend">
+				<span class="input-group-text" id="basic-addon1">Ingredient</span>
+			</div> -->
+			<input type="text" class="form-control" placeholder="Salt" aria-label="Username"
+				aria-describedby="basic-addon1">
+		</div>
+		<span class="col-1"></span>
+		<ul class="list-group list-group-flush col-3">
+			<li class="list-group-item">Salt</li>
+			<li class="list-group-item">Eggs</li>
+			<li class="list-group-item">Flour</li>
+			<li class="list-group-item">Porta ac consectetur ac</li>
+			<li class="list-group-item">Vestibulum at eros</li>
+		</ul>
+
+	</div>
+
+
+	{% for list in recipeList %}
+	<div class="card-deck main-recipe ">
+		{% for recipe in list %}
+
+		<!-- <div class="card single-recipe">
+			<img src="https://i.pinimg.com/474x/52/bc/e1/52bce14a1196430b6ecabfb51ca930a4.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+					content. This content is a little bit longer.</p>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</div> -->
+		<div class="card">
+			<img src="{{ recipe.image_url }}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title"> {{ recipe.title }}</h5>
+				<p class="card-text">{{ recipe.description }}</p>
+				<ul>
+					{% for ingredient in ingredient_list %}
+					<li>{{ ingredient }}</li>
+					{%endfor %}
+				</ul>
+				<p class="card-text"><small class="text-muted">{{ recipe.link }}</small></p>
+			</div>
+		</div>
+		<!-- <br> -->
+
+
+		{%endfor %}
+	</div>
+{%endfor %}
+
+
+</div>
+
 {% endblock %}
