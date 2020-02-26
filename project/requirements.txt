@@ -1,0 +1,5 @@
+flask
+redis
+flask-sqlalchemy
+flask-migrate
+flask_wtf
