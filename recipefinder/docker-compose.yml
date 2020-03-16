@@ -1,11 +1,11 @@
 version: '2'
 services:
     web:
-        build: .
+        build: project
         ports:
             - "5000:5000"
         volumes:
-            - .:/.
+            - ./project:/project/
         # depends_on:
             # - redis
         command: flask run

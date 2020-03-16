@@ -28,14 +28,15 @@
 FROM python:latest
 
 WORKDIR /project
-ADD .
-# ADD . /app
+# ADD project
+ADD . /project
 
 RUN pip install -r requirements.txt
 
-RUN export FLASK_ENV=development
-ENV FLASK_ENV=development
-RUN export FLASK_APP=microblog.py
+# RUN export FLASK_ENV=development
+ENV FLASK_RUN_HOST 0.0.0.0
+ENV FLASK_ENV=production
+# RUN export FLASK_APP=microblog.py
 ENV FLASK_APP microblog.py
 
 EXPOSE 5000
