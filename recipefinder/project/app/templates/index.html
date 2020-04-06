@@ -25,15 +25,15 @@
 			<li class="list-group-item">Eggs</li>
 			<li class="list-group-item">Flour</li>
 			<li class="list-group-item">Porta ac consectetur ac</li>
-			<li class="list-group-item">Vestibulum at eros</li>
+			<li class="list-group-item">Vestibulum at asdasd asd eros</li>
 		</ul>
 
 	</div>
 
 
-	{% for list in recipeList %}
+	<!-- {% for list in recipeList %} -->
 	<div class="card-deck main-recipe ">
-		{% for recipe in list %}
+		{% for recipe in recipeList %}
 
 		<!-- <div class="card single-recipe">
 			<img src="https://i.pinimg.com/474x/52/bc/e1/52bce14a1196430b6ecabfb51ca930a4.jpg" class="card-img-top" alt="...">
@@ -47,14 +47,15 @@
 		<div class="card">
 			<img src="{{ recipe.image_url }}" class="card-img-top" alt="...">
 			<div class="card-body">
-				<h5 class="card-title"> {{ recipe.title }}</h5>
+				<h5 class="card-title">{{
+					recipe.title }}</h5>
 				<p class="card-text">{{ recipe.description }}</p>
 				<ul>
-					{% for ingredient in ingredient_list %}
+					{% for ingredient in recipe.ingredient_list %}
 					<li>{{ ingredient }}</li>
 					{%endfor %}
 				</ul>
-				<p class="card-text"><small class="text-muted">{{ recipe.link }}</small></p>
+				<p class="card-text"><small class="text-muted"> {{ recipe.link }}</small></p>
 			</div>
 		</div>
 		<!-- <br> -->
@@ -62,7 +63,7 @@
 
 		{%endfor %}
 	</div>
-{%endfor %}
+	<!-- {%endfor %} -->
 
 
 </div>

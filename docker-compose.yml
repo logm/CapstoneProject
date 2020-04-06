@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  capstoneproject:
+    image: capstoneproject
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5000
