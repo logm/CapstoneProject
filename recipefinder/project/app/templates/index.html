@@ -18,6 +18,15 @@
 			</div> -->
 			<input type="text" class="form-control" placeholder="Salt" aria-label="Username"
 				aria-describedby="basic-addon1">
+	<form action="" method="post" novalidate>
+
+			{{ form.ingredient.label }}<br>
+			{{ form.ingredient(size=32) }}<br>
+
+			<p>{{ form.submit() }}</p>
+	</form>
+
+
 		</div>
 		<span class="col-1"></span>
 		<ul class="list-group list-group-flush col-3">

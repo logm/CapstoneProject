@@ -1,6 +1,6 @@
 from flask import render_template, flash, redirect, url_for
 from app import app
-from app.forms import LoginForm
+from app.forms import LoginForm, ingredientSearch
 from tinydb import TinyDB, Query, where
 
 
@@ -30,7 +30,7 @@ class RecipeObject:
 
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 @app.route('/index')
 def index():
 	user = {'username': 'Miguasdel'}
@@ -44,17 +44,9 @@ def index():
 			'body': 'The Avengers movie was so cool!'
 		}
 	]
-	# recipes = [
-	#     {
-	#         'image_url': 'https://www.seriouseats.com/recipes/images/2015/07/20150702-sous-vide-hamburger-anova-primary-1500x1125.jpg',
-	#         'title': 'Burger',
-	#         'description': 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-	#         'ingredient_list': {'xyz', 'abc'},
-	#         'link': 'google.com'
-	#     }
-	# ]
-	# recipeList = []
-	# recipeList.append(recipes)
+
+	form = ingredientSearch()
+	print("form", form)
 
 	rlist = []
 	print("rlist length" + str(len(rlist)))
@@ -63,6 +55,7 @@ def index():
 		recipeTable = db.search(where('type') == 'recipe')
 		rq = RecipeList()
 		rlist  = rq.getRecipeList()
+
 	return render_template('index.html', title='Home',  recipeList = rlist)
 
 
@@ -72,6 +65,7 @@ def login():
 	if form.validate_on_submit():
 		flash('Login requested for user {}, remember_me={}'.format(
 			form.username.data, form.remember_me.data))
+		print("user name:", form.username.data)
 		return redirect(url_for('index'))
 	return render_template('login.html',  title='Sign In', form=form)
 
