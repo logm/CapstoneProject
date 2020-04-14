@@ -10,5 +10,5 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Sign In')
 
 class ingredientSearch(FlaskForm):
-    ingredient = StringField('ingredient')
+    inputingredient = StringField('inputingredient')
     submit = SubmitField('Search')

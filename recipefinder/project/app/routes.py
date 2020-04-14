@@ -15,7 +15,7 @@ class RecipeList:
 			# print(r.title)
 			self.recipeList.append(r)
 	recipeList = []
-	def getRecipeList(self):
+	def getFilteredList(self):
 		return self.recipeList
 
 
@@ -27,36 +27,24 @@ class RecipeObject:
 		self.image_url = image_url_
 		self.link = link_
 
-
-
+input_ingredient_list = []
+rlist = []
+print("getting recipes from db")
+# recipeTable = db.search(where('type') == 'recipe')
+rq = RecipeList()
+rlist  = rq.getFilteredList()
 
 @app.route('/', methods=['GET', 'POST'])
-@app.route('/index')
+@app.route('/index', methods=['GET', 'POST'])
 def index():
-	user = {'username': 'Miguasdel'}
-	posts = [
-		{
-			'author': {'username': 'John'},
-			'body': 'Beautiful day in Portland!'
-		},
-		{
-			'author': {'username': 'Susan'},
-			'body': 'The Avengers movie was so cool!'
-		}
-	]
-
 	form = ingredientSearch()
-	print("form", form)
+	if form.inputingredient.data:
+		input_ingredient_list.append(form.inputingredient.data)
 
-	rlist = []
-	print("rlist length" + str(len(rlist)))
-	if len(rlist) == 0:
-		print("getting recipes from db")
-		recipeTable = db.search(where('type') == 'recipe')
-		rq = RecipeList()
-		rlist  = rq.getRecipeList()
+	print("list of input ingredients", str(input_ingredient_list))
 
-	return render_template('index.html', title='Home',  recipeList = rlist)
+
+	return render_template('index.html', title='Home',  recipeList = rlist, form = form, input_ingredient_list = input_ingredient_list)
 
 
 @app.route('/login', methods=['GET', 'POST'])

@@ -20,8 +20,7 @@
 				aria-describedby="basic-addon1">
 	<form action="" method="post" novalidate>
 
-			{{ form.ingredient.label }}<br>
-			{{ form.ingredient(size=32) }}<br>
+			{{ form.inputingredient(size=32) }}<br>
 
 			<p>{{ form.submit() }}</p>
 	</form>
@@ -30,17 +29,18 @@
 		</div>
 		<span class="col-1"></span>
 		<ul class="list-group list-group-flush col-3">
-			<li class="list-group-item">Salt</li>
+			<!-- <li class="list-group-item">Salt</li>
 			<li class="list-group-item">Eggs</li>
 			<li class="list-group-item">Flour</li>
-			<li class="list-group-item">Porta ac consectetur ac</li>
-			<li class="list-group-item">Vestibulum at asdasd asd eros</li>
+			<li class="list-group-item">Porta ac consectetur ac</li> -->
+			{% for ing in input_ingredient_list %}
+				<li class="list-group-item">{{ ing }}</li>
+			{%endfor %}
 		</ul>
 
 	</div>
 
 
-	<!-- {% for list in recipeList %} -->
 	<div class="card-deck main-recipe ">
 		{% for recipe in recipeList %}
 
@@ -72,7 +72,6 @@
 
 		{%endfor %}
 	</div>
-	<!-- {%endfor %} -->
 
 
 </div>
