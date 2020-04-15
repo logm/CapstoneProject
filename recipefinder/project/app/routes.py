@@ -13,11 +13,11 @@ class RecipeList:
 		for recipe in recipeTable:
 			r = RecipeObject(recipe['title'], recipe['description'], recipe['ingredient_list'], recipe['image_url'], recipe['link'])
 			# print(r.title)
-			self.recipeList.append(r)
+			self.recipeList.insert(0, r)
+			# self.recipeList.append(r)
 	recipeList = []
 	def getFilteredList(self):
 		return self.recipeList
-
 
 class RecipeObject:
 	def __init__(self, title_, description_, ingredient_list_, image_url_, link_):
@@ -39,7 +39,9 @@ rlist  = rq.getFilteredList()
 def index():
 	form = ingredientSearch()
 	if form.inputingredient.data:
-		input_ingredient_list.append(form.inputingredient.data)
+		if form.inputingredient.data not in input_ingredient_list:
+			input_ingredient_list.append(form.inputingredient.data)
+	form.inputingredient.data = ""
 
 	print("list of input ingredients", str(input_ingredient_list))
 

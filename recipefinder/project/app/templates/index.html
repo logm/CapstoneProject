@@ -2,78 +2,83 @@
 
 {% block content %}
 
-<div class="col-11">
-	<center>
-		<h1 class="display-4">Recipe Finder</h1>
+<main role="main">
 
-	</center>
+	<div class="col-12">
+
+		<!-- <secion class=" text-center"> -->
+		<!-- <div class="container">
+			<h1>Album example</h1>
+			<p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
+				etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+			<p>
+				<a href="#" class="btn btn-primary my-2">Main call to action</a>
+				<a href="#" class="btn btn-secondary my-2">Secondary action</a>
+			</p> -->
+		<div class="row">
+			<div class="input-group mb-3 col-6">
+				<!-- <div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon1">Ingredient</span>
+							</div> -->
+				<!-- <input type="text" class="form-control" placeholder="Salt" aria-label="Username"
+					aria-describedby="basic-addon1"> -->
+				<form action="" method="post" novalidate>
+
+					{{ form.inputingredient(class="form-control", size=32, placeholder="Salt") }}<br>
+
+					{{ form.submit() }}
+				</form>
 
 
-	<div class="row">
-		<span class="col-1"></span>
-
-		<div class="input-group mb-3 col-6">
-			<!-- <div class="input-group-prepend">
-				<span class="input-group-text" id="basic-addon1">Ingredient</span>
-			</div> -->
-			<input type="text" class="form-control" placeholder="Salt" aria-label="Username"
-				aria-describedby="basic-addon1">
-	<form action="" method="post" novalidate>
-
-			{{ form.inputingredient(size=32) }}<br>
-
-			<p>{{ form.submit() }}</p>
-	</form>
-
+			</div>
+			<span class="col-1"></span>
+			<ul class="list-group list-group-flush col-3">
+				<!-- <li class="list-group-item">Salt</li>
+							<li class="list-group-item">Eggs</li>
+							<li class="list-group-item">Flour</li>
+							<li class="list-group-item">Porta ac consectetur ac</li> -->
+				{% for ing in input_ingredient_list %}
+				<li class="list-group-item">{{ ing }}</li>
+				{%endfor %}
+			</ul>
 
 		</div>
-		<span class="col-1"></span>
-		<ul class="list-group list-group-flush col-3">
-			<!-- <li class="list-group-item">Salt</li>
-			<li class="list-group-item">Eggs</li>
-			<li class="list-group-item">Flour</li>
-			<li class="list-group-item">Porta ac consectetur ac</li> -->
-			{% for ing in input_ingredient_list %}
-				<li class="list-group-item">{{ ing }}</li>
-			{%endfor %}
-		</ul>
-
+	</div>
 	</div>
 
+	<div class="album py-5 bg-light">
+		<div class="container">
 
-	<div class="card-deck main-recipe ">
-		{% for recipe in recipeList %}
-
-		<!-- <div class="card single-recipe">
-			<img src="https://i.pinimg.com/474x/52/bc/e1/52bce14a1196430b6ecabfb51ca930a4.jpg" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-					content. This content is a little bit longer.</p>
-					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			<div class="row">
+				{% for recipe in recipeList %}
+				<div class="col-md-4">
+					<div class="card mb-4 shadow-sm">
+						<img src="{{ recipe.image_url }}" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">{{ recipe.title }}</h5>
+							<p class="card-text">{{ recipe.description }}</p>
+							<ul>
+								{% for ingredient in recipe.ingredient_list %}
+								<li>{{ ingredient }}</li>
+								{%endfor %}
+							</ul>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+									<!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+								</div>
+								<small class="text-muted">{{ recipe.link }}</small>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div> -->
-		<div class="card">
-			<img src="{{ recipe.image_url }}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">{{
-					recipe.title }}</h5>
-				<p class="card-text">{{ recipe.description }}</p>
-				<ul>
-					{% for ingredient in recipe.ingredient_list %}
-					<li>{{ ingredient }}</li>
-					{%endfor %}
-				</ul>
-				<p class="card-text"><small class="text-muted"> {{ recipe.link }}</small></p>
+				{% endfor %}
+
 			</div>
 		</div>
-		<!-- <br> -->
-
-
-		{%endfor %}
 	</div>
 
+</main>
 
-</div>
 
 {% endblock %}
