@@ -35,6 +35,7 @@ class RecipeList:
 			else:
 				notFoundList.append(r)
 
+
 		unsorted = foundList + notFoundList
 		unsorted.sort(key=lambda x: x.numOfInputIng, reverse = True)
 		self.recipeList = unsorted
