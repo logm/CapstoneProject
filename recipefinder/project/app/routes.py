@@ -2,7 +2,7 @@ from flask import render_template, flash, redirect, url_for
 from app import app
 from app.forms import LoginForm, ingredientSearch
 from tinydb import TinyDB, Query, where
-
+import validators
 
 db = TinyDB('db.json')
 
@@ -13,8 +13,13 @@ class RecipeList:
 		for recipe in recipeTable:
 			r = RecipeObject(recipe['title'], recipe['description'], recipe['ingredient_list'], recipe['image_url'], recipe['link'])
 			# print(r.title)
-			self.recipeList.insert(0, r)
-			# self.recipeList.append(r)
+			if validators.url(r.linkFull):
+				#is actual website
+				r.isWebsite = True
+			if r.image_url == 'https://www.webfx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png':
+				self.recipeList.append(r)
+			else:
+				self.recipeList.insert(0, r)
 	recipeList = []
 	def getFilteredList(self, i_list):
 		print("searching")
@@ -50,7 +55,9 @@ class RecipeObject:
 		self.ingredient_list = ingredient_list_
 		self.image_url = image_url_
 		self.link = (link_[:12] + '..') if len(link_) > 12 else link_
+		self.linkFull = link_
 		self.numOfInputIng = 0
+		self.isWebsite = False
 
 input_ingredient_list = []
 rlist = []

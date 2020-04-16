@@ -3,3 +3,4 @@ flask-sqlalchemy
 flask-migrate
 flask_wtf
 tinydb
+validators
