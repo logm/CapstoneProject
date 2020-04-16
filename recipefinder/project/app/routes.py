@@ -17,6 +17,7 @@ class RecipeList:
 			# self.recipeList.append(r)
 	recipeList = []
 	def getFilteredList(self, i_list):
+		print("searching")
 		if not i_list:
 			return self.recipeList
 		foundList = []
@@ -26,7 +27,7 @@ class RecipeList:
 			r.numOfInputIng = 0
 			for r_ing in r.ingredient_list:
 				for ing in i_list:
-					if r_ing == ing:
+					if r_ing.lower() == ing.lower():
 						# print("found")
 						r.numOfInputIng = r.numOfInputIng + 1
 						found += 1
@@ -35,7 +36,7 @@ class RecipeList:
 			else:
 				notFoundList.append(r)
 
-
+		print("sorting")
 		unsorted = foundList + notFoundList
 		unsorted.sort(key=lambda x: x.numOfInputIng, reverse = True)
 		self.recipeList = unsorted
@@ -48,7 +49,7 @@ class RecipeObject:
 		self.description = description_
 		self.ingredient_list = ingredient_list_
 		self.image_url = image_url_
-		self.link = link_
+		self.link = (link_[:12] + '..') if len(link_) > 12 else link_
 		self.numOfInputIng = 0
 
 input_ingredient_list = []

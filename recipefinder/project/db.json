@@ -3,7 +3,7 @@
 		"1": {
 			"type": "recipe",
 			"title": "Jamaican Jerk Chicken",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken"
 			],
@@ -13,7 +13,7 @@
 		"2": {
 			"type": "recipe",
 			"title": "Pasta Salad",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Kielbasa",
 				"Noodles"
@@ -24,7 +24,7 @@
 		"3": {
 			"type": "recipe",
 			"title": "Lasagna",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sausage",
 				"Noodles"
@@ -35,7 +35,7 @@
 		"4": {
 			"type": "recipe",
 			"title": "Hearty Pancakes",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Milk",
 				"Eggs",
@@ -47,7 +47,7 @@
 		"5": {
 			"type": "recipe",
 			"title": "Summer Garden Couscous Salad",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Vegetarian"
 			],
@@ -57,7 +57,7 @@
 		"6": {
 			"type": "recipe",
 			"title": "Squash Corn Chowder",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Vegetarian",
 				"Potatoes"
@@ -68,7 +68,7 @@
 		"7": {
 			"type": "recipe",
 			"title": "White beans, tomatoes and spinach",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Rice",
 				"Vegetarian",
@@ -81,7 +81,7 @@
 		"8": {
 			"type": "recipe",
 			"title": "Spaghetti",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Noodles",
 				"Marinara Sauce"
@@ -92,7 +92,7 @@
 		"9": {
 			"type": "recipe",
 			"title": "Pizza",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sausage",
 				"Cheese"
@@ -103,7 +103,7 @@
 		"10": {
 			"type": "recipe",
 			"title": "Stir-Fry",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Rice"
@@ -114,7 +114,7 @@
 		"11": {
 			"type": "recipe",
 			"title": "Rustic Italian Tortellini Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sausage",
 				"Noodles",
@@ -126,7 +126,7 @@
 		"12": {
 			"type": "recipe",
 			"title": "Swedish Meatballs",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beef",
 				"Noodles",
@@ -138,7 +138,7 @@
 		"13": {
 			"type": "recipe",
 			"title": "Barley Beef Skillet",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beef"
 			],
@@ -148,7 +148,7 @@
 		"14": {
 			"type": "recipe",
 			"title": "Southwest Beef & Rice Skillet",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beef",
 				"Rice",
@@ -160,7 +160,7 @@
 		"15": {
 			"type": "recipe",
 			"title": "Glazed Pork Chops with Corn Bread Dressing",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Pork"
 			],
@@ -170,7 +170,7 @@
 		"16": {
 			"type": "recipe",
 			"title": "Fried Rice",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Eggs",
@@ -182,7 +182,7 @@
 		"17": {
 			"type": "recipe",
 			"title": "Zesty Sausage & Beans",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sausage",
 				"Beans",
@@ -194,7 +194,7 @@
 		"18": {
 			"type": "recipe",
 			"title": "Prosciutto Pasta Toss",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Noodles",
 				"Ham"
@@ -205,7 +205,7 @@
 		"19": {
 			"type": "recipe",
 			"title": "Cashew Chicken with Noodles",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Noodles",
 				"Chicken"
@@ -216,7 +216,7 @@
 		"20": {
 			"type": "recipe",
 			"title": "Herb Chicken with Honey Butter",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken"
 			],
@@ -226,7 +226,7 @@
 		"21": {
 			"type": "recipe",
 			"title": "French Toast",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Eggs"
 			],
@@ -236,7 +236,7 @@
 		"22": {
 			"type": "recipe",
 			"title": "Swedish Pancakes",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Milk",
 				"Eggs"
@@ -247,7 +247,7 @@
 		"23": {
 			"type": "recipe",
 			"title": "Baked Cheddar Eggs & Potatoes",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes",
 				"Bacon",
@@ -260,7 +260,7 @@
 		"24": {
 			"type": "recipe",
 			"title": "Baked Mostaccioli",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Noodles",
 				"Marinara Sauce",
@@ -273,7 +273,7 @@
 		"25": {
 			"type": "recipe",
 			"title": "Ravioli with Snap Peas",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Noodles",
 				"Milk",
@@ -285,7 +285,7 @@
 		"26": {
 			"type": "recipe",
 			"title": "Cloverleaf Rolls",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Milk"
 			],
@@ -295,7 +295,7 @@
 		"27": {
 			"type": "recipe",
 			"title": "Greek Yogurt and Honey Blueberry Muffins",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Eggs",
 				"Milk"
@@ -306,7 +306,7 @@
 		"28": {
 			"type": "recipe",
 			"title": "Whole Grain Waffles",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Eggs",
 				"Milk"
@@ -317,7 +317,7 @@
 		"29": {
 			"type": "recipe",
 			"title": "Hot Chocolate",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Milk"
 			],
@@ -327,17 +327,17 @@
 		"30": {
 			"type": "recipe",
 			"title": "Chocolate Mousse",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Eggs"
 			],
 			"image_url": "https://dl.airtable.com/p1aWENpoQdSnDXzNjHvP_Image%2023%20June%202017%2010%3A40%20AM.jpg",
-			"link": "--"
+			"link": ""
 		},
 		"31": {
 			"type": "recipe",
 			"title": "Orange Chicken",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Rice"
@@ -348,7 +348,7 @@
 		"32": {
 			"type": "recipe",
 			"title": "Tostadas",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Cheese"
@@ -359,7 +359,7 @@
 		"33": {
 			"type": "recipe",
 			"title": "Black Bean Stuffed Sweet Potatoes",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beans",
 				"Cheese"
@@ -370,7 +370,7 @@
 		"34": {
 			"type": "recipe",
 			"title": "Asian Shredded Beef",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beef",
 				"Noodles"
@@ -381,7 +381,7 @@
 		"35": {
 			"type": "recipe",
 			"title": "Capellini with sausage, spinach, and jalapeno",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sausage",
 				"Noodles"
@@ -392,7 +392,7 @@
 		"36": {
 			"type": "recipe",
 			"title": "Crispy Chicken with Kale",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken"
 			],
@@ -402,7 +402,7 @@
 		"37": {
 			"type": "recipe",
 			"title": "Roast Chicken Grain Bowl",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken"
 			],
@@ -412,7 +412,7 @@
 		"38": {
 			"type": "recipe",
 			"title": "Chicken thighs with barley and peas",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken"
 			],
@@ -422,7 +422,7 @@
 		"39": {
 			"type": "recipe",
 			"title": "Rice noodles with meatballs and bok choy",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beef",
 				"Noodles"
@@ -433,7 +433,7 @@
 		"40": {
 			"type": "recipe",
 			"title": "Paprika Pork with Roasted Potatoes and Dill Cream",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Pork",
 				"Potatoes"
@@ -444,7 +444,7 @@
 		"41": {
 			"type": "recipe",
 			"title": "Chicken cutlets with carrot and kale salad",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken"
 			],
@@ -454,7 +454,7 @@
 		"42": {
 			"type": "recipe",
 			"title": "Shepherd's Pie",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beef",
 				"Potatoes"
@@ -465,7 +465,7 @@
 		"43": {
 			"type": "recipe",
 			"title": "Garlic Parmesan Chicken",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Rice"
@@ -476,7 +476,7 @@
 		"44": {
 			"type": "recipe",
 			"title": "Turkey Pot Pie",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Turkey"
 			],
@@ -486,7 +486,7 @@
 		"45": {
 			"type": "recipe",
 			"title": "Balsamic Bacon Brussels Sprouts",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Bacon"
 			],
@@ -496,7 +496,7 @@
 		"46": {
 			"type": "recipe",
 			"title": "Lemon Red Potatoes",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes"
 			],
@@ -506,7 +506,7 @@
 		"47": {
 			"type": "recipe",
 			"title": "Potato and Corn Chowder",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes",
 				"Milk",
@@ -518,7 +518,7 @@
 		"48": {
 			"type": "recipe",
 			"title": "Thai Chicken",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Noodles",
@@ -530,7 +530,7 @@
 		"49": {
 			"type": "recipe",
 			"title": "Italian Fagoli Vegetable Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Vegetarian",
 				"Beans",
@@ -542,7 +542,7 @@
 		"50": {
 			"type": "recipe",
 			"title": "Browned Butter Beets",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beets",
 				"Breadcrumbs"
@@ -553,7 +553,7 @@
 		"51": {
 			"type": "recipe",
 			"title": "Turkey Soup with Homemade Noodles",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Turkey",
 				"Noodles"
@@ -564,7 +564,7 @@
 		"52": {
 			"type": "recipe",
 			"title": "Home fries",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes"
 			],
@@ -574,7 +574,7 @@
 		"53": {
 			"type": "recipe",
 			"title": "Chocolate Raspberry Torte",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Eggs",
 				"Milk"
@@ -585,7 +585,7 @@
 		"54": {
 			"type": "recipe",
 			"title": "Golden Latte",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Milk"
 			],
@@ -595,7 +595,7 @@
 		"55": {
 			"type": "recipe",
 			"title": "Fig Shake",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Milk"
 			],
@@ -605,7 +605,7 @@
 		"56": {
 			"type": "recipe",
 			"title": "Lentil Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Lentils",
 				"Vegetarian",
@@ -618,7 +618,7 @@
 		"57": {
 			"type": "recipe",
 			"title": "Buckwheat Tabboulah",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Buckwheat",
 				"Vegetarian",
@@ -631,7 +631,7 @@
 		"58": {
 			"type": "recipe",
 			"title": "Lentil Rice Bowls with Egg",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Rice",
 				"Lentils",
@@ -643,7 +643,7 @@
 		"59": {
 			"type": "recipe",
 			"title": "Italian Vegetable Lentil Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Lentils",
 				"Onion",
@@ -655,7 +655,7 @@
 		"60": {
 			"type": "recipe",
 			"title": "One Pot Chicken & Potatoes",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes",
 				"Chicken",
@@ -668,7 +668,7 @@
 		"61": {
 			"type": "recipe",
 			"title": "Sweet Korean Lentils",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Lentils",
 				"Rice",
@@ -680,7 +680,7 @@
 		"62": {
 			"type": "recipe",
 			"title": "Buckwheat Beetroot Salad",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beets",
 				"Buckwheat"
@@ -691,7 +691,7 @@
 		"63": {
 			"type": "recipe",
 			"title": "New Potato Lentil Salad",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes",
 				"Lentils"
@@ -702,7 +702,7 @@
 		"64": {
 			"type": "recipe",
 			"title": "Ham & Potato Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes",
 				"Ham",
@@ -715,7 +715,7 @@
 		"65": {
 			"type": "recipe",
 			"title": "Lemon Dill Potatoes",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes"
 			],
@@ -725,7 +725,7 @@
 		"66": {
 			"type": "recipe",
 			"title": "BBQ Lentils",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Lentils",
 				"Rice"
@@ -736,7 +736,7 @@
 		"67": {
 			"type": "recipe",
 			"title": "Healthy Buckwheat Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Buckwheat",
 				"Carrots",
@@ -748,7 +748,7 @@
 		"68": {
 			"type": "recipe",
 			"title": "Buckwheat Chicken Pilaf",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Buckwheat",
 				"Carrots",
@@ -761,7 +761,7 @@
 		"69": {
 			"type": "recipe",
 			"title": "Vegetable Noodle Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Carrots",
 				"Noodles"
@@ -772,7 +772,7 @@
 		"70": {
 			"type": "recipe",
 			"title": "Bacon and Honey Potato Salad",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes",
 				"Bacon"
@@ -783,7 +783,7 @@
 		"71": {
 			"type": "recipe",
 			"title": "Pretzel Sticks",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Eggs",
 				"Flour",
@@ -795,7 +795,7 @@
 		"72": {
 			"type": "recipe",
 			"title": "Golden French Lentil Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Lentils"
 			],
@@ -805,7 +805,7 @@
 		"73": {
 			"type": "recipe",
 			"title": "Lentil Shepherd's Pie",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Lentils",
 				"Carrots",
@@ -819,7 +819,7 @@
 		"74": {
 			"type": "recipe",
 			"title": "Honey Lime Chicken",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Rice"
@@ -830,7 +830,7 @@
 		"75": {
 			"type": "recipe",
 			"title": "Lentil Curry",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Lentils",
 				"Carrots",
@@ -842,7 +842,7 @@
 		"76": {
 			"type": "recipe",
 			"title": "Dutch Oven Bread",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Flour",
 				"Yeast"
@@ -853,7 +853,7 @@
 		"77": {
 			"type": "recipe",
 			"title": "Potato Apple Roast",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Apple",
 				"Potatoes",
@@ -865,7 +865,7 @@
 		"78": {
 			"type": "recipe",
 			"title": "Baking Powder Biscuits",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Flour",
 				"Milk",
@@ -877,7 +877,7 @@
 		"79": {
 			"type": "recipe",
 			"title": "Sugar Cookies",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Flour",
 				"Eggs"
@@ -888,7 +888,7 @@
 		"80": {
 			"type": "recipe",
 			"title": "Potato Curry",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes",
 				"Vegetarian"
@@ -899,7 +899,7 @@
 		"81": {
 			"type": "recipe",
 			"title": "Bucatini all'Amatriciana",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Noodles",
 				"Tomatoes",
@@ -911,7 +911,7 @@
 		"82": {
 			"type": "recipe",
 			"title": "Brioche Chocolate Rolls",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Flour",
 				"Eggs",
@@ -924,7 +924,7 @@
 		"83": {
 			"type": "recipe",
 			"title": "Naan",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Milk",
 				"Yogurt",
@@ -937,7 +937,7 @@
 		"84": {
 			"type": "recipe",
 			"title": "Lemon Poppy Seed Scones",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Flour",
 				"Butter",
@@ -949,7 +949,7 @@
 		"85": {
 			"type": "recipe",
 			"title": "Balsamic Dijon Root Vegetables",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes",
 				"Onion",
@@ -962,7 +962,7 @@
 		"86": {
 			"type": "recipe",
 			"title": "Best Baked Chicken Legs",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Rice"
@@ -973,7 +973,7 @@
 		"87": {
 			"type": "recipe",
 			"title": "Spanish Lentil Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Ham",
 				"Lentils"
@@ -984,7 +984,7 @@
 		"88": {
 			"type": "recipe",
 			"title": "Chocolate Chip Irish Soda Bread",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Flour",
 				"Chocolate Chips"
@@ -995,7 +995,7 @@
 		"89": {
 			"type": "recipe",
 			"title": "Malteese Gilatti",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Flour",
 				"Butter",
@@ -1007,7 +1007,7 @@
 		"90": {
 			"type": "recipe",
 			"title": "Buckwheat Carrot and Onion",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Buckwheat",
 				"Carrots",
@@ -1019,7 +1019,7 @@
 		"91": {
 			"type": "recipe",
 			"title": "Sweet Potatoes with Yogurt and Chickpeas",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chickpeas",
 				"Potatoes",
@@ -1032,7 +1032,7 @@
 		"92": {
 			"type": "recipe",
 			"title": "Spanish Chickpeas",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chickpeas",
 				"Flour",
@@ -1046,7 +1046,7 @@
 		"93": {
 			"type": "recipe",
 			"title": "Lemon Fettuchini",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Noodles",
 				"Coconut milk"
@@ -1057,7 +1057,7 @@
 		"94": {
 			"type": "recipe",
 			"title": "Chickpea Masala",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chickpeas",
 				"Flour",
@@ -1065,23 +1065,23 @@
 				"Eggs"
 			],
 			"image_url": "https://dl.airtable.com/dGGgiQvRTO9Wbz9OGj9S_IMG_20180326_175645649.jpg",
-			"link": "--"
+			"link": ""
 		},
 		"95": {
 			"type": "recipe",
 			"title": "Chickpea Broccoli Pesto",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Broccoli",
 				"Chickpeas"
 			],
 			"image_url": "https://www.webfx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png",
-			"link": "--"
+			"link": ""
 		},
 		"96": {
 			"type": "recipe",
 			"title": "Thai Veggie Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Coconut milk",
 				"Noodles"
@@ -1092,28 +1092,28 @@
 		"97": {
 			"type": "recipe",
 			"title": "Buttery Herb Chicken",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Rice"
 			],
 			"image_url": "https://dl.airtable.com/GYExvowQaymPhacQjUot_IMG_20180401_180911317_HDR.jpg",
-			"link": "--"
+			"link": ""
 		},
 		"98": {
 			"type": "recipe",
 			"title": "Rosemary Parsnips",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Parsnips"
 			],
 			"image_url": "https://dl.airtable.com/k1I6BSNpT9KIRG1NgURE_IMG_20180401_180921951_HDR.jpg",
-			"link": "--"
+			"link": ""
 		},
 		"99": {
 			"type": "recipe",
 			"title": "Balsamic Potatoes and Asparagus",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Potatoes",
 				"Asparagus"
@@ -1124,7 +1124,7 @@
 		"100": {
 			"type": "recipe",
 			"title": "Quinoa Brussels Sweet Potato Salad",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Quinoa",
 				"Brussels Sprouts",
@@ -1136,7 +1136,7 @@
 		"101": {
 			"type": "recipe",
 			"title": "Thai Peanut Cabbage Quinoa",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Quinoa",
 				"Cabbage",
@@ -1148,7 +1148,7 @@
 		"102": {
 			"type": "recipe",
 			"title": "Lemon Garlic Asparagus with Orzo",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Orzo",
 				"Asparagus"
@@ -1159,7 +1159,7 @@
 		"103": {
 			"type": "recipe",
 			"title": "Moroccan Sweet Potato Lentil Stew",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sweet potato",
 				"Lentils",
@@ -1173,7 +1173,7 @@
 		"104": {
 			"type": "recipe",
 			"title": "Chia Crusted Salmon",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Salmon",
 				"Chia"
@@ -1184,7 +1184,7 @@
 		"105": {
 			"type": "recipe",
 			"title": "Pinto Beans and Tomatillo Cilantro Lime Rice",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beans",
 				"Rice",
@@ -1199,7 +1199,7 @@
 		"106": {
 			"type": "recipe",
 			"title": "Thai Squash Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Squash",
 				"Coconut milk",
@@ -1215,7 +1215,7 @@
 		"107": {
 			"type": "recipe",
 			"title": "Roasted Carrot & Peanut Sauce",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Carrots",
 				"Peanut",
@@ -1227,7 +1227,7 @@
 		"108": {
 			"type": "recipe",
 			"title": "Majoram White Wine Chicken",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Wine"
@@ -1238,7 +1238,7 @@
 		"109": {
 			"type": "recipe",
 			"title": "Marjoram Carrots",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Carrots",
 				"Garlic"
@@ -1249,7 +1249,7 @@
 		"110": {
 			"type": "recipe",
 			"title": "Soy Mustard Salmon",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Salmon",
 				"Soy Sauce",
@@ -1263,7 +1263,7 @@
 		"111": {
 			"type": "recipe",
 			"title": "Mango Chutney",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Mango",
 				"Cheese",
@@ -1273,23 +1273,23 @@
 				"Jalopeno Pepper"
 			],
 			"image_url": "https://dl.airtable.com/a3kwI7QQa17lWswLMWQH_IMG_20180617_185026265_HDR.jpg",
-			"link": "--"
+			"link": ""
 		},
 		"112": {
 			"type": "recipe",
 			"title": "Vegetarian Chili",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Vegetarian",
 				"Tomatoes"
 			],
 			"image_url": "https://www.webfx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png",
-			"link": "--"
+			"link": ""
 		},
 		"113": {
 			"type": "recipe",
 			"title": "Sweet Potato Breakfast Burritos",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sweet potato"
 			],
@@ -1299,7 +1299,7 @@
 		"114": {
 			"type": "recipe",
 			"title": "Roasted Sweet Potato Lentil Salad",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Lentils",
 				"Sweet potato",
@@ -1312,7 +1312,7 @@
 		"115": {
 			"type": "recipe",
 			"title": "Cornbread",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Butter",
 				"Milk",
@@ -1326,7 +1326,7 @@
 		"116": {
 			"type": "recipe",
 			"title": "Brussel Honey Lentil Quinoa",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Brussels Sprouts",
 				"Quinoa",
@@ -1339,7 +1339,7 @@
 		"117": {
 			"type": "recipe",
 			"title": "Lentil Sweet Potato Curry",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sweet potato",
 				"Apple",
@@ -1355,7 +1355,7 @@
 		"118": {
 			"type": "recipe",
 			"title": "Gnocci and white beans",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beans",
 				"Spinach",
@@ -1369,7 +1369,7 @@
 		"119": {
 			"type": "recipe",
 			"title": "Pad Thai",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Vegetarian",
 				"Noodles"
@@ -1380,19 +1380,19 @@
 		"120": {
 			"type": "recipe",
 			"title": "Kung Pao Chicken",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Chicken",
 				"Peanut",
 				"Water chestnuts"
 			],
 			"image_url": "https://dl.airtable.com/M2GZNJxvTYOV5VX3EheB_IMG_20180825_175504336_HDR.jpg",
-			"link": "--"
+			"link": ""
 		},
 		"121": {
 			"type": "recipe",
 			"title": "Mediterranean Tuna Steaks",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Tuna",
 				"Capers"
@@ -1403,7 +1403,7 @@
 		"122": {
 			"type": "recipe",
 			"title": "Spicy Black Bean Nachos",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Beans",
 				"Adobo Chile"
@@ -1414,7 +1414,7 @@
 		"123": {
 			"type": "recipe",
 			"title": "Tomato Basil Soup",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Tomatoes",
 				"Basil"
@@ -1425,7 +1425,7 @@
 		"124": {
 			"type": "recipe",
 			"title": "Chewy Chocolate Chip COokies",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Butter",
 				"Chocolate Chips",
@@ -1437,7 +1437,7 @@
 		"125": {
 			"type": "recipe",
 			"title": "Quinoa Peanut Kale Curry",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Quinoa",
 				"Kale",
@@ -1452,7 +1452,7 @@
 		"126": {
 			"type": "recipe",
 			"title": "Sweet Potato Lentil Curry with Pickled Onion",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sweet potato",
 				"Red onion",
@@ -1467,7 +1467,7 @@
 		"127": {
 			"type": "recipe",
 			"title": "Sardine Mediterranean Pasta",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Sardine",
 				"Capers",
@@ -1481,7 +1481,7 @@
 		"128": {
 			"type": "recipe",
 			"title": "Prosciutto apple flatbread pizza",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Apple",
 				"Prosciutto",
@@ -1493,7 +1493,7 @@
 		"129": {
 			"type": "recipe",
 			"title": "Dill Cucumber Salmon",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Fish",
 				"Yogurt",
@@ -1508,7 +1508,7 @@
 		"130": {
 			"type": "recipe",
 			"title": "Vegetable Couscous",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Couscous",
 				"Green Onion",
@@ -1520,7 +1520,7 @@
 		"131": {
 			"type": "recipe",
 			"title": "Talapia Tacos",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Tilapia"
 			],
@@ -1530,7 +1530,7 @@
 		"132": {
 			"type": "recipe",
 			"title": "Pesto Tomato Penne",
-			"description": "--",
+			"description": "",
 			"ingredient_list": [
 				"Pesto"
 			],
