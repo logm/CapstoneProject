@@ -21,21 +21,23 @@ class RecipeList:
 			return self.recipeList
 		foundList = []
 		notFoundList = []
-		for ing in i_list:
-			print("ing", ing)
-			for r in self.recipeList:
-				print("r", r)
-				for ri in r.ingredient_list:
-					print("ri", ri)
-					if ri == ing:
-						print("found")
+		for r in self.recipeList:
+			found = 0
+			r.numOfInputIng = 0
+			for r_ing in r.ingredient_list:
+				for ing in i_list:
+					if r_ing == ing:
+						# print("found")
 						r.numOfInputIng = r.numOfInputIng + 1
-						foundList.append(r)
-						break
-					else:
-						print("not found")
-						foundList.append(r)
-		self.recipeList = foundList + notFoundList
+						found += 1
+			if found:
+				foundList.append(r)
+			else:
+				notFoundList.append(r)
+
+		unsorted = foundList + notFoundList
+		unsorted.sort(key=lambda x: x.numOfInputIng, reverse = True)
+		self.recipeList = unsorted
 		return self.recipeList
 
 

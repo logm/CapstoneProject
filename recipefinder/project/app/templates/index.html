@@ -15,24 +15,24 @@
 				<a href="#" class="btn btn-primary my-2">Main call to action</a>
 				<a href="#" class="btn btn-secondary my-2">Secondary action</a>
 			</p> -->
-			<span class="col-sm"></span>
-			<div class="input-group mb-3">
-				<div class="row">
-					<form action="" method="post" novalidate>
-						<div class="col-sm">
-							{{ form.inputingredient(class="form-control", size=32, placeholder="Salt") }}
+		<span class="col-sm"></span>
+		<div class="input-group mb-3">
+			<div class="row">
+				<form action="" method="post" novalidate>
+					<div class="col-sm">
+						{{ form.inputingredient(class="form-control", size=32, placeholder="Salt") }}
 
-						</div>
-						<div class="col-sm">
+					</div>
+					<div class="col-sm">
 						<br>
 						{{ form.submit(class="btn btn-outline-secondary") }}
-						</div>
-					</form>
+					</div>
+				</form>
 
-				</div>
+			</div>
 
 
-			<!-- <span class="col-sm"></span> -->
+			<span class="col-sm"></span>
 			<ul class="list-group list-group-flush col-sm">
 				<!-- <li class="list-group-item">Salt</li>
 							<li class="list-group-item">Eggs</li>
@@ -51,7 +51,7 @@
 
 			<div class="row">
 				{% for recipe in recipeList %}
-				<div class="col-md-4">
+				<div class="col-md-4 col-lg-3">
 					<div class="card mb-4 shadow-sm">
 						<img src="{{ recipe.image_url }}" class="card-img-top" alt="...">
 						<div class="card-body">
@@ -65,7 +65,9 @@
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="btn-group">
 									<button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-									<button type="button" class="btn btn-sm btn-outline-secondary">{{ recipe.numOfInputIng }}</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="popover"
+										data-trigger="hover"
+										data-content="{{ recipe.numOfInputIng }} common ingredients">{{ recipe.numOfInputIng }}</button>
 								</div>
 								<small class="text-muted">{{ recipe.link }}</small>
 							</div>
@@ -73,7 +75,6 @@
 					</div>
 				</div>
 				{% endfor %}
-
 			</div>
 		</div>
 	</div>
