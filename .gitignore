@@ -1,5 +1,9 @@
 microblog/
 old/
+poster/examples/
+poster/images/
+*.txt
+*.csv
 
 
 # Byte-compiled / optimized / DLL files
