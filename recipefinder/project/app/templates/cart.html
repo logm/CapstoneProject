@@ -1,3 +1,32 @@
 {% extends "base.html" %}
 
-<h1>Cart</h1>
+{% block content %}
+<span class="col-sm"></span>
+
+<h1 class="col-sm">Cart</h1>
+
+<div class="row">
+
+	<span class="col-sm"></span>
+	<ul class="list-group list-group-flush col-sm">
+		<h3>Cart Recipes</h3>
+		{% for recipe in cartRecipes %}
+
+		<a href = "{{ recipe.linkFull }}">
+			<img src="{{ recipe.image_url }}" class="card-img-bottom" alt="...">
+			<li class="list-group-item">{{ recipe.title }}</li>
+		</a>
+		{%endfor %}
+	</ul>
+
+	<span class="col-sm"></span>
+	<br>
+	<ul class="list-group list-group-flush col-sm">
+		<h3>Ingredients</h3>
+		{% for ingredient in input_ingredient_list %}
+		<li class="list-group-item">{{ ingredient }}</li>
+		{%endfor %}
+	</ul>
+	<span class="col-sm"></span>
+</div>
+{% endblock %}

@@ -4,7 +4,7 @@ from app.forms import LoginForm, ingredientSearch
 from tinydb import TinyDB, Query, where
 import validators
 
-db = TinyDB('db.json')
+db = TinyDB('db-test.json')
 
 class RecipeList:
 	def __init__(self):
@@ -65,6 +65,9 @@ print("getting recipes from db")
 # recipeTable = db.search(where('type') == 'recipe')
 rq = RecipeList()
 rlist  = rq.getFilteredList(None)
+cartRecipes = []
+
+
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
@@ -96,4 +99,5 @@ def login():
 
 @app.route('/cart')
 def cart():
-	return render_template('cart.html', title='Cart')
+	cartRecipes = rlist
+	return render_template('cart.html', title='Cart', cartRecipes = cartRecipes, input_ingredient_list = input_ingredient_list)
