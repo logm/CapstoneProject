@@ -6,38 +6,20 @@
 
 	<div class="container">
 
-		<!-- <secion class=" text-center"> -->
-		<!-- <div class="container">
-			<h1>Album example</h1>
-			<p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
-				etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-			<p>
-				<a href="#" class="btn btn-primary my-2">Main call to action</a>
-				<a href="#" class="btn btn-secondary my-2">Secondary action</a>
-			</p> -->
 		<span class="col-sm"></span>
 		<div class="input-group mb-3">
 			<div class="row">
 				<form action="" method="post" novalidate>
-					<div class="col-sm">
-						{{ form.inputingredient(class="form-control", size=32, placeholder="Salt") }}
+					<div class="col-sm"> {{ form.inputingredient(class="form-control", size=32, placeholder="Salt") }}
 
 					</div>
-					<div class="col-sm">
-						<br>
-						{{ form.submit(class="btn btn-outline-secondary") }}
-					</div>
+					<div class="col-sm"> <br> {{ form.submit(class="btn btn-outline-secondary") }} </div>
 				</form>
 
 			</div>
 
-
 			<span class="col-sm"></span>
 			<ul class="list-group list-group-flush col-sm">
-				<!-- <li class="list-group-item">Salt</li>
-							<li class="list-group-item">Eggs</li>
-							<li class="list-group-item">Flour</li>
-							<li class="list-group-item">Porta ac consectetur ac</li> -->
 				{% for ing in input_ingredient_list %}
 				<li class="list-group-item">{{ ing }}</li>
 				{%endfor %}
@@ -49,11 +31,8 @@
 	<div class="album py-5 bg-light">
 		<div class="container">
 
-			<div class="row">
-				{% for recipe in recipeList %}
-				<div class="col-md-4 col-lg-3">
-					<div class="card mb-4 shadow-sm">
-						<img src="{{ recipe.image_url }}" class="card-img-top" alt="...">
+			<div class="row"> {% for recipe in recipeList %} <div class="col-md-4 col-lg-3">
+					<div class="card mb-4 shadow-sm"> <img src="{{ recipe.image_url }}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">{{ recipe.title }}</h5>
 							<p class="card-text">{{ recipe.description }}</p>
@@ -64,31 +43,30 @@
 							</ul>
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="btn-group">
-				<form action="" method="post" novalidate>
-					<div class="col-sm">
-						{{ addToCartForm.inputCart(class="form-control", value="{{ recipe.title }}"
-						) }}
+									<form action="" method="post" novalidate>
+										<div class="col-sm">
+											{{ addToCartForm.inputCart(class="form-control invisible ", value=recipe.title ) }}
 
-					</div>
-					<div class="col-sm">
-						<br>
-						{{ addToCartForm.submit(class="btn btn-outline-secondary") }}
-					</div>
-				</form>
-									<button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-									<button type="button" class="btn btn-sm btn-outline-info" data-toggle="popover"
-										data-trigger="hover"
-										data-content="{{ recipe.numOfInputIng }} common ingredients">{{ recipe.numOfInputIng }}</button>
-								</div>
-								<!-- <small class="text-muted">{{ recipe.link }}</small> -->
+										</div>
+										<div class="col-sm"> <br>
+											{{ addToCartForm.submit(class="btn btn-sm btn-outline-secondary") }}
+										</div>
+									</form> <button type="button" class="btn btn-sm btn-outline-secondary">Add to
+										Cart</button> <button type="button" class="btn btn-sm btn-outline-info"
+										data-toggle="popover" data-trigger="hover"
+										data-content="{{ recipe.numOfInputIng }} common ingredients">
+										{{ recipe.numOfInputIng }}
+									</button>
+								</div> <!-- <small class="text-muted">{{ recipe.link }}</small> -->
 								{% if recipe.isWebsite == True %}
-									<a href="{{ recipe.linkFull }}">
-										<button type="button" class="btn btn-link" data-toggle="popover" data-trigger="hover"
-											data-content="{{ recipe.linkFull }}">Source</button>
-									</a>
+								<a href="{{ recipe.linkFull }}"> <button type="button" class="btn btn-link"
+										data-toggle="popover" data-trigger="hover"
+										data-content="{{ recipe.linkFull }}">Source</button> </a>
 								{% else %}
 								<button type="button" class="btn btn-link" data-toggle="popover" data-trigger="hover"
-									data-content="{{ recipe.linkFull }}">{{ recipe.link }}</button>
+									data-content="{{ recipe.linkFull }}">
+									{{ recipe.link }}
+								</button>
 
 								{% endif %}
 							</div>
@@ -101,6 +79,5 @@
 	</div>
 
 </main>
-
 
 {% endblock %}
