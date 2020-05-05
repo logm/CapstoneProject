@@ -12,3 +12,7 @@ class LoginForm(FlaskForm):
 class ingredientSearch(FlaskForm):
     inputingredient = StringField('inputingredient')
     submit = SubmitField('Add ingredient')
+
+class addToCart(FlaskForm):
+    inputCart = StringField('inputcart')
+    submit = SubmitField('Add to Cart')

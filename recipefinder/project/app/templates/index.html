@@ -64,6 +64,17 @@
 							</ul>
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="btn-group">
+				<form action="" method="post" novalidate>
+					<div class="col-sm">
+						{{ addToCartForm.inputCart(class="form-control", value="{{ recipe.title }}"
+						) }}
+
+					</div>
+					<div class="col-sm">
+						<br>
+						{{ addToCartForm.submit(class="btn btn-outline-secondary") }}
+					</div>
+				</form>
 									<button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
 									<button type="button" class="btn btn-sm btn-outline-info" data-toggle="popover"
 										data-trigger="hover"

@@ -22,10 +22,16 @@
 	<span class="col-sm"></span>
 	<br>
 	<ul class="list-group list-group-flush col-sm">
-		<h3>Ingredients</h3>
-		{% for ingredient in input_ingredient_list %}
-		<li class="list-group-item">{{ ingredient }}</li>
+		<h3>Needed Ingredients</h3>
+		{% for ni in neededIngredients %}
+		<li class="list-group-item">{{ ni.name }} x {{ni.occurences}}</li>
 		{%endfor %}
+	</ul>
+	<ul class="list-group list-group-flush col-sm">
+			<h3>Used Ingredients</h3>
+			{% for ui in usedIngredients %}
+				<li class="list-group-item">{{ ui.name }}<span class="font-weight-lighter"> x {{ ui.occurences}}</span></li>
+			{%endfor %}
 	</ul>
 	<span class="col-sm"></span>
 </div>
