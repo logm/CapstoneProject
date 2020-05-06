@@ -3,7 +3,6 @@ import validators
 
 db = TinyDB("db-test.json")
 
-
 class RecipeList:
 	recipeList = []
 
@@ -72,26 +71,49 @@ class RecipeObject:
 class ShoppingList:
 	neededIngredients = []
 	usedIngredients = []
-	def __init__(self, rlist, inputIngredientList):
+	def __init__(self, r_slist, inputIngredientList):
 		self.usedIngredients.clear()
 		self.neededIngredients.clear()
-		a = shoppingListIngredient()
-		b = shoppingListIngredient()
+		# a = shoppingListIngredient()
 
-		for recipe in rlist:
-			print("rlist count", len(rlist))
+		#convert rlist to r_olist
+		r_olist = self.strListToObjList(r_slist)
+
+		for recipe in r_olist:
+			print("r_slist count", len(r_slist))
 			for ringredient in recipe.ingredient_list:
-				print("")
 				a = shoppingListIngredient()
 				if ringredient in inputIngredientList:
 					a.name = ringredient
 					a.occurences += 1
 					self.usedIngredients.append(a)
 				else:
-					b.name = ringredient
-					b.occurences += 3
-					self.usedIngredients.append(b)
+					a.name = ringredient
+					a.occurences += 3
+					self.neededIngredients.append(a)
 
+	def strListToObjList(self, slist):
+		olist = []
+		print(slist)
+		for recipe in slist:
+			rec = db.search(where("title") == recipe)
+			if (len(rec) == 0):
+				#length is zero
+				print("length of rec is 0")
+				return
+			else:
+				rec = rec[0]
+				ro = RecipeObject(
+					rec["title"],
+					rec["description"],
+					rec["ingredient_list"],
+					rec["image_url"],
+					rec["link"],
+				)
+				olist.append(ro)
+
+		print(olist)
+		return olist
 
 
 	def getNeededIngredients(self):
