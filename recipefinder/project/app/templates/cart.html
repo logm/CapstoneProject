@@ -8,6 +8,9 @@
 <div class="row">
 
 	<span class="col-sm"></span>
+	{% if not cartRecipes	%}
+	<h3>No Cart Recipes!</h3>
+	{% else %}
 	<ul class="list-group list-group-flush col-sm">
 		<h3>Cart Recipes</h3>
 		{% for recipe in cartRecipes %}
@@ -19,20 +22,34 @@
 		{%endfor %}
 	</ul>
 
+
+	{% endif %}
 	<span class="col-sm"></span>
 	<br>
+
+	{% if neededIngredients |length == 0 %}
+	<h3>No needed Ingredients</h3>
+	{% else %}
 	<ul class="list-group list-group-flush col-sm">
 		<h3>Needed Ingredients</h3>
 		{% for ni in neededIngredients %}
 		<li class="list-group-item">{{ ni.name }} x {{ni.occurences}}</li>
 		{%endfor %}
 	</ul>
+
+	{% endif %}
+
+	{% if not usedIngredients %}
+	<h3>No used Ingredients</h3>
+	{% else %}
 	<ul class="list-group list-group-flush col-sm">
 			<h3>Used Ingredients</h3>
 			{% for ui in usedIngredients %}
 				<li class="list-group-item">{{ ui.name }}<span class="font-weight-lighter"> x {{ ui.occurences}}</span></li>
 			{%endfor %}
 	</ul>
+
+	{% endif %}
 	<span class="col-sm"></span>
 </div>
 {% endblock %}

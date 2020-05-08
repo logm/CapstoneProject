@@ -1,7 +1,7 @@
 from tinydb import TinyDB, Query, where
 import validators
 
-db = TinyDB("db-test.json")
+db = TinyDB("db.json")
 
 class RecipeList:
 	recipeList = []
@@ -79,18 +79,27 @@ class ShoppingList:
 		#convert rlist to r_olist
 		r_olist = self.strListToObjList(r_slist)
 
-		for recipe in r_olist:
-			print("r_slist count", len(r_slist))
-			for ringredient in recipe.ingredient_list:
-				a = shoppingListIngredient()
-				if ringredient in inputIngredientList:
-					a.name = ringredient
+		if r_olist and len(r_olist) > 0:
+			for recipe in r_olist:
+				# print("r_slist count", len(r_slist))
+				for ringredient in recipe.ingredient_list:
+					a = shoppingListIngredient()
+					if ringredient in inputIngredientList:
+						a.name = ringredient
+						a.occurences += 1
+						self.usedIngredients.append(a)
+					else:
+						a.name = ringredient
+						a.occurences += 1
+						self.neededIngredients.append(a)
+		else: #no recipes
+			if len(inputIngredientList) > 0:
+				for inputing in inputIngredientList:
+					a = shoppingListIngredient()
+					a.name = inputing
 					a.occurences += 1
-					self.usedIngredients.append(a)
-				else:
-					a.name = ringredient
-					a.occurences += 3
 					self.neededIngredients.append(a)
+
 
 	def strListToObjList(self, slist):
 		olist = []
@@ -110,6 +119,7 @@ class ShoppingList:
 					rec["image_url"],
 					rec["link"],
 				)
+				# print("ro", ro.title)
 				olist.append(ro)
 
 		print(olist)
