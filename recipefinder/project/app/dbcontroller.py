@@ -101,7 +101,7 @@ class ShoppingList:
 					print("ShoppingList init else", inputing)
 					a = shoppingListIngredient()
 					a.name = inputing
-					a.occurences += 1
+					a.occurences += 0
 					self.usedIngredients.append(a)
 			else:
 				print("????? this should not happen")
@@ -126,6 +126,9 @@ class ShoppingList:
 					rec["link"],
 				)
 				# print("ro", ro.title)
+				if validators.url(ro.linkFull):
+					# is actual website
+					ro.isWebsite = True
 				olist.append(ro)
 
 		print(olist)
@@ -139,7 +142,7 @@ class ShoppingList:
 
 		for i in range(len(self.neededIngredients)):
 			for j in range(len(self.neededIngredients)):
-				if i != j:
+				if i != j and i < len(self.neededIngredients) and j < len(self.neededIngredients):
 					if self.neededIngredients[i].name == self.neededIngredients[j].name:
 						#add occurence to j
 						#remove i
@@ -153,7 +156,7 @@ class ShoppingList:
 			return self.usedIngredients
 		for i in range(len(self.usedIngredients)):
 			for j in range(len(self.usedIngredients)):
-				if i != j:
+				if i != j and i < len(self.usedIngredients) and j < len(self.usedIngredients):
 					if self.usedIngredients[i].name == self.usedIngredients[j].name:
 						#add occurence to j
 						#remove i

@@ -3,7 +3,6 @@
 {% block content %}
 <span class="col-sm"></span>
 
-<h1 class="col-sm">Cart</h1>
 
 <div class="row">
 
@@ -14,11 +13,16 @@
 	<ul class="list-group list-group-flush col-sm">
 		<h3>Cart Recipes</h3>
 		{% for recipe in cartRecipes %}
+			{% if recipe.isWebsite == True  %}
+				<a href = "{{ recipe.linkFull }}">
+					<img src="{{ recipe.image_url }}" class="card-img-bottom" alt="...">
+					<li class="list-group-item">{{ recipe.title }}</li>
+				</a>
 
-		<a href = "{{ recipe.linkFull }}">
-			<img src="{{ recipe.image_url }}" class="card-img-bottom" alt="...">
-			<li class="list-group-item">{{ recipe.title }}</li>
-		</a>
+			{% else %}
+				<img src="{{ recipe.image_url }}" class="card-img-bottom" alt="...">
+				<li class="list-group-item">{{ recipe.title }}</li>
+				{% endif %}
 		{%endfor %}
 	</ul>
 

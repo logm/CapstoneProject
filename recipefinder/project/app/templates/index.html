@@ -10,10 +10,12 @@
 		<div class="input-group mb-3">
 			<div class="row">
 				<form action="" method="post" novalidate>
-					<div class="col-sm"> {{ form.inputingredient(class="form-control", size=32, placeholder="Salt") }}
-
+					<div class="col-sm">
+						{{ form.inputingredient(class="form-control", size=32, placeholder="Salt") }}
 					</div>
-					<div class="col-sm"> <br> {{ form.submit(class="btn btn-outline-secondary") }} </div>
+					<div class="col-sm">
+						{{ form.submit(class="btn btn-outline-secondary") }}
+					</div>
 				</form>
 
 			</div>
@@ -21,7 +23,7 @@
 			<span class="col-sm"></span>
 			<ul class="list-group list-group-flush col-sm">
 				{% for ing in input_ingredient_list %}
-				<li class="list-group-item">{{ ing }}</li>
+					<li class="list-group-item">{{ ing }}</li>
 				{%endfor %}
 			</ul>
 
@@ -41,31 +43,26 @@
 								<li>{{ ingredient }}</li>
 								{%endfor %}
 							</ul>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
+							<div class="">
+								<div class="row">
 									<form action="" method="post" novalidate>
-										<div class="col-sm">
-											{{ addToCartForm.inputCart(class="form-control invisible ", value=recipe.title ) }}
-
-										</div>
 										<div class="col-sm"> <br>
 											{{ addToCartForm.submit(class="btn btn-sm btn-outline-secondary") }}
+											<button type="button" class="btn btn-sm btn-outline-info" data-toggle="popover" data-trigger="hover" data-content="{{ recipe.numOfInputIng }} common ingredients">
+												{{ recipe.numOfInputIng }}
+											</button>
 										</div>
-									</form> <button type="button" class="btn btn-sm btn-outline-secondary">Add to
-										Cart</button> <button type="button" class="btn btn-sm btn-outline-info"
-										data-toggle="popover" data-trigger="hover"
-										data-content="{{ recipe.numOfInputIng }} common ingredients">
-										{{ recipe.numOfInputIng }}
-									</button>
+										{{ addToCartForm.inputCart(class="invisible ", value=recipe.title ) }}
+
+									</form>
+									<!-- <button type="button" class="btn btn-sm btn-outline-secondary">Add to
+										Cart</button> -->
 								</div> <!-- <small class="text-muted">{{ recipe.link }}</small> -->
 								{% if recipe.isWebsite == True %}
-								<a href="{{ recipe.linkFull }}"> <button type="button" class="btn btn-link"
-										data-toggle="popover" data-trigger="hover"
-										data-content="{{ recipe.linkFull }}">Source</button> </a>
+								<a href="{{ recipe.linkFull }}"> <button type="button" class="btn btn-link" data-toggle="popover" data-trigger="hover" data-content="{{ recipe.linkFull }}">Source</button> </a>
 								{% else %}
-								<button type="button" class="btn btn-link" data-toggle="popover" data-trigger="hover"
-									data-content="{{ recipe.linkFull }}">
-									{{ recipe.link }}
+								<button type="button" class="btn btn-link" data-toggle="popover" data-trigger="hover" data-content="{{ recipe.linkFull }}">
+									{{ recipe.linkFull }}
 								</button>
 
 								{% endif %}
