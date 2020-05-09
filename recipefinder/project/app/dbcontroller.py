@@ -83,22 +83,28 @@ class ShoppingList:
 			for recipe in r_olist:
 				# print("r_slist count", len(r_slist))
 				for ringredient in recipe.ingredient_list:
+					print("ringredient", ringredient)
 					a = shoppingListIngredient()
-					if ringredient in inputIngredientList:
+					if ringredient.lower() in (ii.lower() for ii in inputIngredientList):
+						print("adding to used", ringredient)
 						a.name = ringredient
 						a.occurences += 1
 						self.usedIngredients.append(a)
 					else:
+						print("adding to needed", ringredient)
 						a.name = ringredient
 						a.occurences += 1
 						self.neededIngredients.append(a)
 		else: #no recipes
 			if len(inputIngredientList) > 0:
 				for inputing in inputIngredientList:
+					print("ShoppingList init else", inputing)
 					a = shoppingListIngredient()
 					a.name = inputing
 					a.occurences += 1
-					self.neededIngredients.append(a)
+					self.usedIngredients.append(a)
+			else:
+				print("????? this should not happen")
 
 
 	def strListToObjList(self, slist):
@@ -127,9 +133,32 @@ class ShoppingList:
 
 
 	def getNeededIngredients(self):
+		#should remove duplicates and increase counts
+		if len(self.neededIngredients) <= 1:
+			return self.neededIngredients
+
+		for i in range(len(self.neededIngredients)):
+			for j in range(len(self.neededIngredients)):
+				if i != j:
+					if self.neededIngredients[i].name == self.neededIngredients[j].name:
+						#add occurence to j
+						#remove i
+						self.neededIngredients[j].occurences = self.neededIngredients[j].occurences + 1
+						del self.neededIngredients[i]
 		return self.neededIngredients
 
 	def getUsedIngredients(self):
+		#should remove duplicates and increase counts
+		if len(self.usedIngredients) <= 1:
+			return self.usedIngredients
+		for i in range(len(self.usedIngredients)):
+			for j in range(len(self.usedIngredients)):
+				if i != j:
+					if self.usedIngredients[i].name == self.usedIngredients[j].name:
+						#add occurence to j
+						#remove i
+						self.usedIngredients[j].occurences = self.usedIngredients[j].occurences + 1
+						del self.usedIngredients[i]
 		return self.usedIngredients
 
 class shoppingListIngredient:

@@ -22,8 +22,10 @@ rlist  = rq.getFilteredList(None) # load full recipe list on first page load
 def index():
 	form = ingredientSearch()
 	addToCartForm = addToCart()
-	print(addToCartForm.inputCart.data)
-	cartRecipes.append(addToCartForm.inputCart.data)
+	if addToCartForm.inputCart.data:
+		if addToCartForm.inputCart.data not in cartRecipes and addToCartForm.inputCart.data != '':
+			print(addToCartForm.inputCart.data)
+			cartRecipes.append(addToCartForm.inputCart.data)
 
 	#prevents duplicate inputs
 	if form.inputingredient.data:
