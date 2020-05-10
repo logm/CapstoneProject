@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<span class="col-sm"></span>
 
 
-<div class="row">
-
+<div class="container-fluid">
+	<div class="row cart-body mt-md-4">
 	<span class="col-sm"></span>
 	{% if not cartRecipes	%}
 	<h3>No Cart Recipes!</h3>
@@ -22,13 +21,13 @@
 			{% else %}
 				<img src="{{ recipe.image_url }}" class="card-img-bottom" alt="...">
 				<li class="list-group-item">{{ recipe.title }}</li>
-				{% endif %}
+			{% endif %}
 		{%endfor %}
 	</ul>
 
 
 	{% endif %}
-	<span class="col-sm"></span>
+	<div class="col-2"></div>
 	<br>
 
 	{% if neededIngredients |length == 0 %}
@@ -42,6 +41,7 @@
 	</ul>
 
 	{% endif %}
+	<div class="col-1"></div>
 
 	{% if not usedIngredients %}
 	<h3>No used Ingredients</h3>
@@ -55,5 +55,6 @@
 
 	{% endif %}
 	<span class="col-sm"></span>
+	</div>
 </div>
 {% endblock %}

@@ -7,33 +7,28 @@
 	<div class="container">
 
 		<span class="col-sm"></span>
-		<div class="input-group mb-3">
-			<div class="row">
-				<form action="" method="post" novalidate>
-					<div class="col-sm">
-						{{ form.inputingredient(class="form-control", size=32, placeholder="Salt") }}
-					</div>
-					<div class="col-sm">
-						{{ form.submit(class="btn btn-outline-secondary") }}
-					</div>
+		<div class="row ">
+		<div class="input-group">
+				<form action="" class="form-inline" method="post" novalidate>
+						{{ form.inputingredient(class="form-control col", size=32, placeholder="Salt") }}
+						{{ form.submit(class="btn btn-outline-secondary col ml-2") }}
 				</form>
 
-			</div>
 
 			<span class="col-sm"></span>
 			<ul class="list-group list-group-flush col-sm">
 				{% for ing in input_ingredient_list %}
-					<li class="list-group-item">{{ ing }}</li>
+				<li class="list-group-item">{{ ing }}</li>
 				{%endfor %}
 			</ul>
 
 		</div>
 	</div>
-
 	<div class="album py-5 bg-light">
 		<div class="container">
 
-			<div class="row"> {% for recipe in recipeList %} <div class="col-md-4 col-lg-3">
+			<div class="row"> {% for recipe in recipeList %}
+				<div class="col-md-4 col-lg-3">
 					<div class="card mb-4 shadow-sm"> <img src="{{ recipe.image_url }}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">{{ recipe.title }}</h5>
@@ -52,7 +47,10 @@
 												{{ recipe.numOfInputIng }}
 											</button>
 										</div>
-										{{ addToCartForm.inputCart(class="invisible ", value=recipe.title ) }}
+										<div class="invisible addtocartinput">
+											yo
+											{{ addToCartForm.inputCart(value=recipe.title ) }}
+										</div>
 
 									</form>
 									<!-- <button type="button" class="btn btn-sm btn-outline-secondary">Add to

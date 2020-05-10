@@ -51,3 +51,8 @@ footer p {
 .bg-red {
   background-color: #831010;
 }
+
+.addtocartinput {
+  display: none;
+
+}
