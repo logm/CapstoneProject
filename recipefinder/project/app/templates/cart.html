@@ -36,7 +36,7 @@
 	<ul class="list-group list-group-flush col-sm">
 		<h3>Needed Ingredients</h3>
 		{% for ni in neededIngredients %}
-		<li class="list-group-item">{{ ni.name }} x {{ni.occurences}}</li>
+		<li class="list-group-item">{{ ni.name }} x {{ni.occurrences}}</li>
 		{%endfor %}
 	</ul>
 
@@ -49,7 +49,7 @@
 	<ul class="list-group list-group-flush col-sm">
 			<h3>Used Ingredients</h3>
 			{% for ui in usedIngredients %}
-				<li class="list-group-item">{{ ui.name }}<span class="font-weight-lighter"> x {{ ui.occurences}}</span></li>
+				<li class="list-group-item">{{ ui.name }}<span class="font-weight-lighter"> x {{ ui.occurrences}}</span></li>
 			{%endfor %}
 	</ul>
 
