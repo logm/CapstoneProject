@@ -83,15 +83,21 @@ class ShoppingList:
 			for recipe in r_olist:
 				# print("r_slist count", len(r_slist))
 				for ringredient in recipe.ingredient_list:
-					print("ringredient", ringredient)
+					# print("ringredient", ringredient)
 					a = shoppingListIngredient()
 					if ringredient.lower() in (ii.lower() for ii in inputIngredientList):
-						print("adding to used", ringredient)
-						a.name = ringredient
-						a.occurrences += 1
-						self.usedIngredients.append(a)
+						# print("adding to used", ringredient)
+						found = False
+						for i in range(len(self.usedIngredients)):
+							if self.usedIngredients[i].name.lower() == ringredient.lower():
+								found = True
+								self.usedIngredients[i].occurrences += 1
+						if not found:
+							a.name = ringredient
+							a.occurrences += 1
+							self.usedIngredients.append(a)
 					else:
-						print("adding to needed", ringredient)
+						# print("adding to needed", ringredient)
 						a.name = ringredient
 						a.occurrences += 1
 						self.neededIngredients.append(a)
@@ -105,19 +111,18 @@ class ShoppingList:
 					self.usedIngredients.append(a)
 			else:
 				print("????? this should not happen")
-		if len(self.usedIngredients) < len(inputIngredientList):
-			# print("last else")
-			for ii in inputIngredientList:
-				found = False
-				for ui in self.usedIngredients:
-					print("comparison between" , ii.lower(), ui.name.lower())
-					if ii.lower() == ui.name.lower():
-						found = True
-				if not found:
-					a = shoppingListIngredient()
-					a.name = ii
-					a.occurrences += 0
-					self.usedIngredients.append(a)
+		for ii in inputIngredientList:
+			found = False
+			for ui in self.usedIngredients:
+				if ii.lower() == ui.name.lower():
+					found = True
+				print("comparison between" , ii.lower(), ui.name.lower(), found)
+			if not found:
+				a = shoppingListIngredient()
+				a.name = ii
+				a.occurrences += 0
+				print("adding unused", ii)
+				self.usedIngredients.append(a)
 
 
 	def strListToObjList(self, slist):
