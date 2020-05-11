@@ -1,1 +1,5 @@
-Add to cart feature
+- Scrape recipe website for new data
+- Add option to remove input ingredients and recipes
+- Add accounts
+- Add live update to remove need for refreshing
+- Change to a more traditional DB
