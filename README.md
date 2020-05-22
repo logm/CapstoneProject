@@ -1,6 +1,8 @@
 # CapstoneProject - Recipe Finder
 ## Logan Markle
 
+![](poster/poster-5-11-50.png)
+
 
 This project will help you find a recipe with ingredients you already have.
 
